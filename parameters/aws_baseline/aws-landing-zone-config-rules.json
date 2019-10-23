@@ -52,6 +52,10 @@
     "ParameterValue": "3306"
   },
   {
+    "ParameterKey": "blockedPort4",
+    "ParameterValue": "4444"
+  },
+  {
     "ParameterKey": "blockedPort5",
     "ParameterValue": "4333"
   }
