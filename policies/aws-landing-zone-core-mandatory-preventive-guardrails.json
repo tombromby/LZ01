@@ -8,22 +8,6 @@
                 }
             },
             "Action": [
-                "sns:Subscribe",
-                "sns:Unsubscribe"
-            ],
-            "Resource": [
-                "arn:aws:sns:*:*:AWS-Landing-Zone*"
-            ],
-            "Effect": "Deny",
-            "Sid": "GRSNSSUBSCRIPTIONPOLICY"
-        },
-        {
-            "Condition": {
-                "ArnNotLike": {
-                    "aws:PrincipalARN": "arn:aws:iam::*:role/AWSCloudFormationStackSetExecutionRole"
-                }
-            },
-            "Action": [
                 "cloudtrail:DeleteTrail",
                 "cloudtrail:PutEventSelectors",
                 "cloudtrail:StopLogging",
