@@ -14,7 +14,7 @@ organizational_units:
     core_accounts:
       # Security account
       - name: security
-        email: tombromby1+lzsec@gmail.com
+        email: +lzsec@gmail.com
         ssm_parameters:
           - name: /org/member/security/account_id
             value: $[AccountId]
@@ -58,7 +58,7 @@ organizational_units:
               - us-west-2
       # Logging account
       - name: log-archive
-        email: tombromby1+lzlogging@gmail.com
+        email: +lzlogging@gmail.com
         ssm_parameters:
           - name: /org/member/logging/account_id
             value: $[AccountId]
@@ -72,7 +72,7 @@ organizational_units:
                 value: $[output_BucketName]
       # Shared Services account
       - name: shared-services
-        email: tombromby1+lzshared@gmail.com
+        email: +lzshared@gmail.com
         ssm_parameters:
           - name: /org/member/sharedservices/account_id
             value: $[AccountId]
